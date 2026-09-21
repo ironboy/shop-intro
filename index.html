@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Mina produkter</h1>
+
+  <section class="product">
+    <h2>Badanka</h2>
+    <p>En trevlig badanka att prata med när du kodar. Ankan svarar inget men du upptäcker själv att du visste
+      egentligen.</p>
+    <form data-label="Badanka" data-price="50">
+      <label>Antal:
+        <input name="quantity" type="number" value="0" min="0" max="999" name="badanka">
+      </label>
+    </form>
+  </section>
+
+  <section class="product">
+    <h2>Slagpåse</h2>
+    <p>En påse fylld med mjuka ärtor att slå på när syntax känns övermäktig. (Hellre det än att slå på sin lärare.)</p>
+    <form data-label="Slagpåse" data-price="110">
+      <label>Antal:
+        <input name="quantity" type="number" value="0" min="0" max="999" name="slagpase">
+      </label>
+    </form>
+  </section>
+
+  <section class="product">
+    <h2>Jolt-Cola</h2>
+    <p>Varför mesa med kaffe och Coca-Cola när man kan bli darrhänt och uppåt på en enda Jolt?</p>
+    <form data-label="Jolt Cola" data-price="25">
+      <label>Antal:
+        <input name="quantity" type="number" value="0" min="0" max="999" name="joltcola">
+      </label>
+    </form>
+  </section>
+
+  <hr>
+  <section class="cart-section">
+    <h2>Varukorg</h2>
+    <div class="cart"></div>
+  </section>
+
+
+  <script type="module" src="fe26-shop.js"></script>
+</body>
+
+</html>
