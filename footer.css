@@ -1,0 +1,21 @@
+/* Sticky footer solution
+   - if the page content is shorter than the viewport
+     make the footer jump to the bottom
+     otherwise: Show the footer after you have scrolled down */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Styling the footer */
+footer {
+  background-color: rgb(215, 215, 215);
+  border-top: 1px solid black;
+  padding: 20px;
+  text-align: center;
+}

@@ -1,8 +1,9 @@
 @import "paging.css";
+@import "footer.css";
 
 body {
   font-family: Verdana, "sans-serif";
-  margin-top: 130px;
+  margin: 0;
 }
 
 header {
@@ -32,6 +33,7 @@ header {
 }
 
 main {
+  padding-top: 130px;
   margin: 20px;
 }
 
