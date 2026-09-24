@@ -1,7 +1,26 @@
 body {
   font-family: Verdana, "sans-serif";
+  margin-top: 110px;
 }
 
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+
+  h1 {
+    margin: 0;
+    margin-left: 20px;
+  }
+}
+
+main {
+  margin: 20px;
+}
 
 .product {
   border: 1px solid #999;
@@ -21,7 +40,7 @@ body {
   right: 20px;
   width: min(420px, 90vw);
   background-color: white;
-  border: 1px solid #999;
+  border: 1px solid rgb(192, 192, 192);
   border-radius: 7px;
 
   summary {
@@ -29,24 +48,6 @@ body {
     user-select: none;
     font-weight: bold;
     padding: 10px 15px;
-    list-style: none;
-
-    &::-webkit-details-marker {
-      display: none;
-    }
-
-    &::after {
-      content: "▼";
-      float: right;
-    }
-  }
-
-  details[open] summary {
-    border-bottom: 1px solid #999;
-
-    &::after {
-      content: "▲";
-    }
   }
 
   .cart {

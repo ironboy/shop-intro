@@ -9,47 +9,61 @@
 </head>
 
 <body>
-  <h1>Mina produkter</h1>
+  <header>
+    <h1>Min shop</h1>
+  </header>
 
-  <section class="product">
-    <h2>Badanka</h2>
-    <p>En trevlig badanka att prata med när du kodar. Ankan svarar inget men du upptäcker själv att du visste
-      egentligen.</p>
-    <form data-label="Badanka" data-price="50">
-      <label>Antal:
-        <input name="quantity" type="number" value="0" min="0" max="999">
-      </label>
-    </form>
-  </section>
+  <main>
+    <section class="product">
+      <h2>Badanka</h2>
+      <p>En trevlig badanka att prata med när du kodar. Ankan svarar inget men du upptäcker själv att du visste
+        egentligen.</p>
+      <form data-label="Badanka" data-price="50">
+        <label>Antal:
+          <input name="quantity" type="number" value="0" min="0" max="999">
+        </label>
+      </form>
+    </section>
 
-  <section class="product">
-    <h2>Slagpåse</h2>
-    <p>En påse fylld med mjuka ärtor att slå på när syntax känns övermäktig. (Hellre det än att slå på sin lärare.)</p>
-    <form data-label="Slagpåse" data-price="110">
-      <label>Antal:
-        <input name="quantity" type="number" value="0" min="0" max="999">
-      </label>
-    </form>
-  </section>
+    <section class="product">
+      <h2>Slagpåse</h2>
+      <p>En påse fylld med mjuka ärtor att slå på när syntax känns övermäktig. (Hellre det än att slå på sin lärare.)
+      </p>
+      <form data-label="Slagpåse" data-price="110">
+        <label>Antal:
+          <input name="quantity" type="number" value="0" min="0" max="999">
+        </label>
+      </form>
+    </section>
 
-  <section class="product">
-    <h2>Jolt-Cola</h2>
-    <p>Varför mesa med kaffe och Coca-Cola när man kan bli darrhänt och uppåt på en enda Jolt?</p>
-    <form data-label="Jolt Cola" data-price="25">
-      <label>Antal:
-        <input name="quantity" type="number" value="0" min="0" max="999">
-      </label>
-    </form>
-  </section>
+    <section class="product">
+      <h2>Jolt-Cola</h2>
+      <p>Varför mesa med kaffe och Coca-Cola när man kan bli darrhänt och uppåt på en enda Jolt?</p>
+      <form data-label="Jolt Cola" data-price="25">
+        <label>Antal:
+          <input name="quantity" type="number" value="0" min="0" max="999">
+        </label>
+      </form>
+    </section>
 
-  <aside class="cart-section">
-    <details>
-      <summary>Varukorg</summary>
-      <div class="cart"></div>
-    </details>
-  </aside>
+    <aside class="cart-section">
+      <!-- 
+      details is a special element 
+      the web browser knows that i should make it 
+      fold out/in content when the user clicks it
 
+      If you want to show all content initially then add
+      then add the attribute open: <details open>
+    -->
+      <details>
+        <!-- The summary is always visible inside a details element -->
+        <summary>Varukorg</summary>
+        <!-- All other content can be hidden/shown by clicking the details element-->
+        <div class="cart"></div>
+      </details>
+    </aside>
 
+  </main>
   <script type="module" src="fe26-shop.js"></script>
 </body>
 
