@@ -1,0 +1,36 @@
+/* 
+  The logic that hides/shows articles in the 
+  main element of the page depending on 
+  which url fragment (a link starting with #)
+  that is currently chosen
+
+  This allows one html file to contain different
+  "pages" seen from the standpoint of the user
+*/
+main {
+
+  /* Hide all articles inside main */
+  article {
+    /* display: none - do not display/show */
+    display: none;
+    /* Normally the browser scrolls to the target (the element
+   whose id matches the #link). Asking for a huge gap above
+   it makes that impossible, so the page stays at the top.
+   Too much does no harm, too little brings the jump back */
+    scroll-margin-top: 1000px;
+  }
+
+  /* Show the article whose id matches the
+     hashtag in the link using :target */
+  article:target {
+    display: block;
+  }
+
+  /* 
+    & = me -> main
+    "om jag, main, inte har någon article
+     som är target visa då artikeln som har id (#) start */
+  &:not(:has(article:target)) article#start {
+    display: block;
+  }
+}

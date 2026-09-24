@@ -11,40 +11,75 @@
 <body>
   <header>
     <h1>Min shop</h1>
+    <nav>
+      <a href="#start">Välkommen</a>
+      <a href="#produkter">Våra produkter</a>
+    </nav>
   </header>
 
   <main>
-    <section class="product">
+    <article id="start">
+      <h2>Start</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure in maiores molestias consequatur ut
+        quibusdam nesciunt dolor illo nihil corporis impedit, voluptas dicta a quod, accusantium sequi animi quas?</p>
+      <p>Corrupti mollitia, dignissimos corporis atque odio deserunt doloribus aliquam reiciendis eius molestias est
+        nisi vero! Iste ad asperiores possimus. Voluptatibus excepturi eius deleniti labore! Corrupti laborum
+        necessitatibus sed aut perspiciatis.</p>
+      <p>Deleniti accusantium soluta debitis facilis. Mollitia, culpa sequi! Quos, quasi. Magni facilis nulla atque,
+        ipsam ducimus iste voluptates praesentium cum perferendis nesciunt, pariatur possimus voluptate illum debitis,
+        eos eaque reiciendis.</p>
+    </article>
+
+    <article id="produkter">
+      <section class="product">
+        <h2>Badanka</h2>
+        <p>En trevlig badanka att prata med när du kodar. Ankan svarar inget men du upptäcker själv att du visste
+          egentligen.</p>
+        <p><a href="#produkt-badanka">Läs mer</a></p>
+        <form data-label="Badanka" data-price="50">
+          <label>Antal:
+            <input name="quantity" type="number" value="0" min="0" max="999">
+          </label>
+        </form>
+      </section>
+
+      <section class="product">
+        <h2>Slagpåse</h2>
+        <p>En påse fylld med mjuka ärtor att slå på när syntax känns övermäktig. (Hellre det än att slå på sin lärare.)
+        </p>
+        <form data-label="Slagpåse" data-price="110">
+          <label>Antal:
+            <input name="quantity" type="number" value="0" min="0" max="999">
+          </label>
+        </form>
+      </section>
+
+      <section class="product">
+        <h2>Jolt-Cola</h2>
+        <p>Varför mesa med kaffe och Coca-Cola när man kan bli darrhänt och uppåt på en enda Jolt?</p>
+        <form data-label="Jolt Cola" data-price="25">
+          <label>Antal:
+            <input name="quantity" type="number" value="0" min="0" max="999">
+          </label>
+        </form>
+      </section>
+    </article>
+
+    <article id="produkt-badanka">
       <h2>Badanka</h2>
-      <p>En trevlig badanka att prata med när du kodar. Ankan svarar inget men du upptäcker själv att du visste
-        egentligen.</p>
-      <form data-label="Badanka" data-price="50">
-        <label>Antal:
-          <input name="quantity" type="number" value="0" min="0" max="999">
-        </label>
-      </form>
-    </section>
-
-    <section class="product">
-      <h2>Slagpåse</h2>
-      <p>En påse fylld med mjuka ärtor att slå på när syntax känns övermäktig. (Hellre det än att slå på sin lärare.)
-      </p>
-      <form data-label="Slagpåse" data-price="110">
-        <label>Antal:
-          <input name="quantity" type="number" value="0" min="0" max="999">
-        </label>
-      </form>
-    </section>
-
-    <section class="product">
-      <h2>Jolt-Cola</h2>
-      <p>Varför mesa med kaffe och Coca-Cola när man kan bli darrhänt och uppåt på en enda Jolt?</p>
-      <form data-label="Jolt Cola" data-price="25">
-        <label>Antal:
-          <input name="quantity" type="number" value="0" min="0" max="999">
-        </label>
-      </form>
-    </section>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil esse debitis laboriosam a tempore minima
+        quisquam impedit quidem! Unde, harum qui quaerat repellendus placeat nulla voluptas iusto nemo voluptatum.</p>
+      <p>Aliquam praesentium animi ex in autem magni. Incidunt porro accusamus facilis corrupti delectus quo? Blanditiis
+        accusantium magni id minus laboriosam. Quod unde, laudantium earum inventore doloremque dolorum dolore vitae
+        dignissimos.</p>
+      <p>Voluptatem dolor porro ipsum accusantium numquam voluptates temporibus eum! Velit facere quis animi tempore
+        adipisci, recusandae mollitia numquam saepe sint inventore eius, natus accusamus voluptate, earum ipsam
+        aspernatur asperiores tempora.</p>
+      <p>Dicta consequatur saepe quisquam, doloremque aspernatur rem! Doloribus perferendis similique modi cumque
+        incidunt quaerat molestiae voluptatum. Ab, necessitatibus autem officiis, corporis sint in consectetur quas
+        culpa, eligendi ipsum doloremque recusandae!</p>
+      <p><a href="#produkter">Tillbaka till produktlistan</a></p>
+    </article>
 
     <aside class="cart-section">
       <!-- 
