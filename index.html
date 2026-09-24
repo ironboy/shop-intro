@@ -92,6 +92,51 @@
       <p><a href="#produkter">Tillbaka till produktlistan</a></p>
     </article>
 
+    <article id="checka-ut">
+      <h2>Dina adressuppgifter</h2>
+      <form>
+        <label>
+          Förnamn:
+          <input type="text" name="firstName" required>
+        </label>
+        <label>
+          Efternamn:
+          <input type="text" name="lastName" required>
+        </label>
+        <label>
+          E-post:
+          <input type="email" name="email" required>
+        </label>
+        <p><i>Det finns många fler fält vi vill ha här, adress uppdelad i olika delar, kanske telefon etc.</i></p>
+        <label>
+          Välj fraktalternativ:
+          <!-- 
+          In order to make a select
+          required -> the user has to choose something
+          add reuired to the select AND
+          use value="" on the first option 
+          and make it disabled and selected
+          -->
+          <select required>
+            <option value="" disabled selected>Välj fraktsätt</option>
+            <option>PostNord</option>
+            <option>DHL</option>
+            <option>Schenker</option>
+          </select>
+        </label>
+        <label>
+          <input type="checkbox" name="allowCampaignMails">
+          Skicka mig erbjudanden via e-post
+        </label>
+        <label>
+          Frågor/kommentarer:
+          <textarea name="comments"></textarea>
+        </label>
+        <button type="submit">Avsluta köpet</button>
+
+      </form>
+    </article>
+
     <aside class="cart-section">
       <!-- 
       details is a special element 
@@ -106,6 +151,7 @@
         <summary>Varukorg</summary>
         <!-- All other content can be hidden/shown by clicking the details element-->
         <div class="cart"></div>
+        <p><a href="#checka-ut">Avsluta ditt köp</a></p>
       </details>
     </aside>
 
