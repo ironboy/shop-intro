@@ -12,11 +12,47 @@ body {
 
   &:nth-of-type(odd) {
     background-color: rgb(242, 242, 247);
-    ;
   }
 }
 
 .cart-section {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: min(420px, 90vw);
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 7px;
+
+  summary {
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::after {
+      content: "▼";
+      float: right;
+    }
+  }
+
+  details[open] summary {
+    border-bottom: 1px solid #999;
+
+    &::after {
+      content: "▲";
+    }
+  }
+
+  .cart {
+    padding: 15px;
+  }
+
   table {
     width: 100%;
 
