@@ -2,6 +2,11 @@
 @import "footer.css";
 @import "forms.css";
 
+/* include padding and borders in the width of elements */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Verdana, "sans-serif";
   margin: 0;
@@ -19,6 +24,10 @@ header {
   h1 {
     margin: 0;
     margin-left: 20px;
+
+    @media(width<650px) {
+      margin-bottom: 70px;
+    }
   }
 
   nav {
@@ -36,6 +45,10 @@ header {
 main {
   padding-top: 130px;
   margin: 20px;
+
+  @media(width<650px) {
+    padding-top: 180px;
+  }
 }
 
 .product {
@@ -48,6 +61,27 @@ main {
   &:nth-of-type(odd) {
     background-color: rgb(242, 242, 247);
   }
+
+  /* let elements float beside each other on the same row */
+  display: inline-block;
+  /* display: inline-block adds 4px between elements, fix that */
+  width: calc(33.3% - 4px);
+  /* set min-height based on tallest products - most text */
+  min-height: 276px;
+  /* aligning all product "cards" to top */
+  vertical-align:top;
+
+  @media(width<1155px) {
+    min-height: 300px;
+  }
+
+  @media(width<945px) {
+    width: calc(50% - 4px);
+  }
+
+  @media(width<620px) {
+    width: 100%
+  }
 }
 
 .cart-section {
@@ -58,6 +92,10 @@ main {
   background-color: white;
   border: 1px solid rgb(192, 192, 192);
   border-radius: 7px;
+
+  @media(width<650px) {
+    top: 70px;
+  }
 
   summary {
     cursor: pointer;
