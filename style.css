@@ -85,6 +85,10 @@ main {
 }
 
 .cart-section {
+  /* long words in product names etc might stretch the cart
+     fix by applying hyphenation (sv. avstavning) */
+  hyphens: auto;
+
   position: fixed;
   top: 20px;
   right: 20px;
